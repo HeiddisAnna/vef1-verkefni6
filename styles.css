@@ -20,7 +20,6 @@ main {
   padding-right: 20px;
 }
 
-/* TODO taka ætti padding af main þegar komið er fyrir ofan hámarksbreidd */
 h1, h2, h3 {
     font-size: 1.375em; 
     line-height: 1.375em;  
@@ -48,8 +47,6 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* grid fyrir efni, setja þarf upp í html */
-
 .grid_row {
   display: flex;
   flex-direction: column;
@@ -68,7 +65,6 @@ h1 {
 }
 
 @media (min-width: 1000px){
-
     .cards_col{
         max-width: 33.3333333%;
         padding-left: 10px;
@@ -78,13 +74,16 @@ h1 {
     .grid_row{
         flex-direction: row;
     }
+
     .grid_col {
         margin-bottom: 40px; 
         width: 50%;
     }
+
     .grid_row:nth-child(2n) .grid_col:first-child {
         order: 0;
     }
+
     .grid_img {
         width: 100%;
     }
@@ -97,11 +96,14 @@ h1 {
 }
 
 @media (min-width: 700px){
-
     .cards_col{
         width: 50%;
         padding-left: 10px;
         padding-right: 10px;
+    }
+
+    .cards{
+        margin-bottom: 40px;
     }
 
     .grid_img{
@@ -203,10 +205,19 @@ h1 {
         max-height: 100%;
         padding-left: 0;
         padding-right: 0;
+        padding-top: 0;         
+    }
+
+    .card_content{
+        margin-bottom: 20px;
     }
 
     .card_title{
         padding: 0; 
+    }
+
+    .card_text{
+        margin-bottom: 20px;
     }
 
     .cards_col{
@@ -228,13 +239,9 @@ h1 {
     .card_image {
         padding: 0;
     }
-
     
-
-
-
-    
-
+    .card_list{
+        margin-bottom: 10px; /* Sett til að líkjast fyrirmynd */
+    }
 }
-"# vef1-verkefni6" 
-"# vef1-verkefni6" 
+
