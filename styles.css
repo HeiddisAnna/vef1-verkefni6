@@ -44,6 +44,9 @@ h1 {
   max-width: 100%;
   margin-bottom: 20px;
 }
+.grid_img{
+    margin-bottom: 20px;
+}
 
 /* grid fyrir efni, setja þarf upp í html */
 
@@ -67,9 +70,11 @@ h1 {
 @media (min-width: 1000px){
 
     .cards_col{
-        width: 33.3333%;
+        max-width: 33.3333333%;
+        padding-left: 10px;
+        padding-right: 10px;
     }
-  
+   
     .grid_row{
         flex-direction: row;
     }
@@ -83,12 +88,20 @@ h1 {
     .grid_img {
         width: 100%;
     }
+
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
 }
 
 @media (min-width: 700px){
 
     .cards_col{
         width: 50%;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .grid_img{
@@ -109,6 +122,7 @@ h1 {
 .cards_row {
     display:flex;
     flex-wrap: wrap;
+    flex-direction: row;
     margin-right: -10px;
     margin-left: -10px;    
 }
@@ -117,7 +131,6 @@ h1 {
     display: flex;
     padding-left: 10px;
     padding-right: 10px;
-    width: 100%;
     margin-bottom: 20px;
 }
 
@@ -127,8 +140,6 @@ h1 {
   
     margin-bottom: 10px;
     padding: 10px;
-    width: 100%;
-    max-width: 470px;
     max-height: 300px;
     overflow: hidden;
   
@@ -225,4 +236,5 @@ h1 {
     
 
 }
+"# vef1-verkefni6" 
 "# vef1-verkefni6" 
